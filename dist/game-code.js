@@ -62,7 +62,7 @@ var ambiantLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambiantLight);
 //scene.background = new THREE.Color(0xffffff);
 
-controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls = new OrbitControls(camera, renderer.domElement);
 //controls = new THREE.OrbitControls(camera);
 //controls.Update;
 
