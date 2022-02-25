@@ -1,3 +1,5 @@
+import { OrbitControls } from "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js";
+
 var scene = new THREE.Scene();
 scene.background = new THREE.Color(0xdddddd);
 var camera = new THREE.PerspectiveCamera(
