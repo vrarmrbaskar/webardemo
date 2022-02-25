@@ -95,7 +95,7 @@ var loader = new THREE.GLTFLoader();
 //loader.load("model/ascis-nimbus-20/scene.gltf", function (gltf) {
 //loader.load("model/container/scene.gltf", function (gltf) {
   loader.load(
-          "model/chair/chair1.glb", 
+          "chair1.glb", 
           function (gltf) {
               //gltf.scene.position.set(5, -15, 7);
               var chair = gltf.scene.children[0];
