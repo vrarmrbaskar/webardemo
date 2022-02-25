@@ -89,7 +89,8 @@ var GameLoop = function () {
   Render();
 };
 
-var loader = new THREE.GLTFLoader();
+//var loader = new THREE.GLTFLoader();
+var loader = new GLTFLoader();
 
 //loader.load("model/ascis-nimbus-20/scene.gltf", function (gltf) {
 //loader.load("model/container/scene.gltf", function (gltf) {
