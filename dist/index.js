@@ -30,6 +30,7 @@ ClickedDot = (count) => {
   show_figure = document.getElementById("show-figure");
 
   arqrcode = document.getElementById("arqrcode");
+  modelViewer = document.querySelector("model-viewer");
 
     // if (count === 1) {
     //   //SWITCH TO 3D
@@ -49,14 +50,16 @@ ClickedDot = (count) => {
     if (count === 1) {
       //SWITCH TO 3D
       console.log(`---- 3D and count value-----${count}`);
-      shoe3D.classList.remove("off");
+      modelViewer.classList.remove('off');
+      //shoe3D.classList.remove("off");
       shoe_img.classList.add("off");
     //  show_figure.classList.add("off");    
       arqrcode.classList.add("off");
     } else if(count === 2) {
       //SWITCH TO IMAGE
       console.log(`---- Image and count value----${count}`);
-      shoe3D.classList.add("off");
+      //shoe3D.classList.add("off");
+      modelViewer.classList.add("off");
       arqrcode.classList.add("off");
       shoe_img.classList.remove("off");
     //  show_figure.classList.remove("off");
@@ -64,7 +67,8 @@ ClickedDot = (count) => {
     } else if(count === 3){
       console.log(`---- ARVR code and count value-----${count}`);
       arqrcode.classList.remove("off");
-      shoe3D.classList.add("off");
+      //shoe3D.classList.add("off");
+      modelViewer.classList.add("off");
       shoe_img.classList.add("off");
     // show_figure.classList.remove("off");
     }
@@ -90,7 +94,7 @@ SwitchActiveDot = (count) => {
       console.log('---- 3D -----');
       document.getElementById("dot-1").classList.remove("active");
       document.getElementById("dot-2").classList.add("active");
-      document.getElementById("dot-3").classList.remove("active");
+    //  document.getElementById("dot-3").classList.remove("active");
       document.getElementById("threedicon").classList.remove("not-active");
       document.getElementById("crossicon").classList.remove("not-active");
       document.getElementById("header").style.visibility = "hidden";
@@ -100,7 +104,7 @@ SwitchActiveDot = (count) => {
     document.getElementById("header").style.visibility = "visible";
       document.getElementById("dot-1").classList.add("active");
       document.getElementById("dot-2").classList.remove("active");
-      document.getElementById("dot-3").classList.remove("active");
+   //   document.getElementById("dot-3").classList.remove("active");
       document.getElementById("crossicon").classList.add("not-active");
       document.getElementById("threedicon").classList.add("not-active");
 
@@ -109,7 +113,7 @@ SwitchActiveDot = (count) => {
       document.getElementById("header").style.visibility = "visible";
       document.getElementById("dot-1").classList.remove("active");
       document.getElementById("dot-2").classList.remove("active");
-      document.getElementById("dot-3").classList.add("active");
+   //   document.getElementById("dot-3").classList.add("active");
       document.getElementById("crossicon").classList.add("not-active");
       document.getElementById("threedicon").classList.add("not-active");
   
