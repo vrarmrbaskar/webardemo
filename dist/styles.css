@@ -633,10 +633,10 @@ model-viewer {
   background-color: #eee;
   overflow-x: hidden;
   --poster-color: #eee;
-  height: 40rem;
-  width: 60rem;
+  height: 30rem;
+  width: 50rem;
   position: absolute;
-  top: 8%;
+  top: 18%;
   left: 5%;
   right: 0;
   margin-left: auto;
